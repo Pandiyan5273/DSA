@@ -14,7 +14,7 @@ public:
                 res.push_back(matrix[i][r-1]);
             }
             r--;
-            if(!(l<r && t<b)){
+           if(!(l<r && t<b)){
                 break;
             }
             for(int i=r-1;i>=l;i--){
