@@ -1,11 +1,9 @@
 class Solution:
     def scoreOfString(self, s: str) -> int:
-        l=[]
+        ans=[]
+        si=0
         for i in s:
-            a=ord(i)
-            l.append(a)
-        n=len(l)    
-        sumi=0    
-        for i in range(n-1):
-            sumi+=abs(l[i]-l[i+1])
-        return sumi    
+            ans.append(ord(i))
+        for i in range(len(ans)-1):
+            si+=abs(ans[i]-ans[i+1])
+        return si    
